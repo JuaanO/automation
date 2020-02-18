@@ -3,7 +3,6 @@ import unittest
 
 EXE_PATH = r'./geckodriver'
 
-
 class Items(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Firefox(executable_path=EXE_PATH)
@@ -19,7 +18,6 @@ class Items(unittest.TestCase):
 
     def tearDown(self):
         self.driver.quit()
-
 
 if __name__ == '__main__':
     unittest.main()
